@@ -1,0 +1,147 @@
+:root{
+  --verde:#6a958a;
+  --verde-claro:#8fb3a9;
+  --crema:#fbf6ef;
+  --rosa:#f3b6c1;
+  --texto:#333;
+}
+
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+body{
+  font-family:'Montserrat',sans-serif;
+  background:var(--crema);
+  color:var(--texto);
+}
+.logo{
+  width:300px;       
+  margin:0 auto -10px; 
+  display:block;
+}
+header{
+  background:var(--verde);
+  color:#fff;
+  padding:30px 40px;
+  text-align:center;
+}
+
+.menu{
+  margin-top:15px;
+}
+
+.menu a{
+  color:#fff;
+  text-decoration:none;
+  margin:0 16px;
+  font-weight:500;
+}
+
+h1{
+  font-family:'Playfair Display',serif;
+  font-size:48px;
+  text-align:center;
+}
+
+.productos{
+  max-width:1100px;
+  margin:60px auto 0;
+}
+
+.section-title{
+  text-align:center;
+  font-family:'Playfair Display',serif;
+  color:var(--verde-claro);
+  font-size:34px;
+  margin-bottom:30px;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:28px;
+  padding:0 20px 40px;
+}
+
+@media(max-width:900px){
+  .grid{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:550px){
+  .grid{grid-template-columns:1fr}
+}
+
+.card{
+  background:#fff;
+  border-radius:8px;
+  overflow:hidden;
+  text-align:center;
+  box-shadow:0 4px 10px rgba(0,0,0,.08);
+}
+
+.card img{
+  width:100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  display:block;
+}
+
+.card h3{
+  font-family:'Playfair Display',serif;
+  margin:14px 0 6px;
+}
+
+.price{
+  margin-bottom:10px;
+}
+
+.btn{
+  background:var(--rosa);
+  color:#fff;
+  padding:6px 16px;
+  border-radius:20px;
+  text-decoration:none;
+  display:inline-block;
+  margin-bottom:16px;
+}
+
+.pagination{
+  display:flex;
+  justify-content:center;
+  gap:10px;
+  margin-bottom:50px;
+}
+
+.pagination a{
+  background:#fff;
+  border:1px solid var(--verde-claro);
+  color:var(--verde);
+  padding:6px 12px;
+  border-radius:6px;
+  text-decoration:none;
+}
+
+.pagination a:hover{
+  background:var(--verde-claro);
+  color:#fff;
+}
+
+footer{
+  background:var(--verde);
+  color:#fff;
+  padding:30px 40px;
+}
+
+.footer-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:20px;
+}
+
+.copy{
+  text-align:center;
+  margin-top:20px;
+  font-size:13px;
+}
